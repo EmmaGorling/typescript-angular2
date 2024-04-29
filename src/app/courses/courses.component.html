@@ -1,6 +1,7 @@
 <main>
-    <h2>Kurser för Webbutvecklingsprogrammet</h2>
+    <h2>Webbutveckling | Ramschema</h2>
 
+    <input type="text" value="Sök..." [(ngModel)]="searchInput" (ngModelChange)="searchTable()">
     <table>
         <thead>
             <th (click)="sortName()">Kursnamn</th>
