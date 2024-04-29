@@ -4,8 +4,8 @@
     <table>
         <thead>
             <th (click)="sortName()">Kursnamn</th>
-            <th>Kurskod</th>
-            <th>Progression</th>
+            <th (click)="sortCode()">Kurskod</th>
+            <th (click)="sortProg()">Progression</th>
         </thead>
         <tbody>
             <tr *ngFor="let course of courseList">
