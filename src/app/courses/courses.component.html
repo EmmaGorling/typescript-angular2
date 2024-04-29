@@ -1,3 +1,18 @@
 <main>
-    
+    <h2>Kurser för Webbutvecklingsprogrammet</h2>
+
+    <table>
+        <thead>
+            <th>Kursnamn</th>
+            <th>Kurskod</th>
+            <th>Progression</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let course of courseList">
+                <td>{{ course.coursename }}</td>
+                <td>{{ course.code }}</td>
+                <td>{{ course.progression }}</td>
+            </tr>
+        </tbody>
+    </table>
 </main>
