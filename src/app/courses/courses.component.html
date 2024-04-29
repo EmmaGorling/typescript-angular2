@@ -1,7 +1,8 @@
 <main>
     <h2>Webbutveckling | Ramschema</h2>
 
-    <input type="text" value="Sök..." [(ngModel)]="searchInput" (ngModelChange)="searchTable()">
+    <label for="search">Sök</label>
+    <input type="text" id="search" name="search" [(ngModel)]="searchInput" (ngModelChange)="searchTable()">
     <table>
         <thead>
             <th (click)="sortName()">Kursnamn</th>
