@@ -50,6 +50,8 @@ main {
         th:hover {
             cursor: pointer;
             background-color: rgb(148, 123, 163);
+            border-left: 2px solid black;
+            border-right: 2px solid black;
         }
 
         td {
@@ -62,12 +64,12 @@ main {
         .tableCode {
             width: 20%;
             text-align: center;
-            border-left: 1px solid black;
+            border-left: 2px solid black;
         }
         .tableProg {
             width: 15%;
             text-align: center;
-            border-left: 1px solid black;
+            border-left: 2px solid black;
         }
     }
 }
