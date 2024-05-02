@@ -2,6 +2,14 @@
 
 main {
     width: 100%;
+    margin: 1em 0 1em;
+
+    #container {
+        width: 96%;
+        margin: auto;
+        background-color: $white-lucid;
+        padding: 10px 0 10px;
+    }
     
     h2 {
         text-align: center;
@@ -9,14 +17,46 @@ main {
 
     #input {
         width: fit-content;
-        margin: 10px auto;
+        margin: 2em auto 2em;
 
         label {
             margin-right: 5px;
+        }
+        input {
+            border: 2px solid black;
         }
     }
 
     table {
         width: 90%;
+        max-width: 900px;
+        margin: 5px auto;
+        border: 2px solid black;
+        line-height: 1.3em;
+        tr:nth-child(even) {
+            background-color: rgb(148, 123, 163);
+        }
+
+        th {
+            border-bottom: 2px solid black;
+        }
+
+        td {
+            font-weight: 500;
+        }
+
+        .tableName {
+            width: 50%;
+        }
+        .tableCode {
+            width: 20%;
+            text-align: center;
+            border-left: 1px solid black;
+        }
+        .tableProg {
+            width: 15%;
+            text-align: center;
+            border-left: 1px solid black;
+        }
     }
 }
