@@ -6,6 +6,10 @@
             <label for="search">Sök</label>
             <input type="text" id="search" name="search" [(ngModel)]="searchInput" (ngModelChange)="searchTable()">
         </div>
+
+        @if(courseList.length === 0) {
+            <p>Vi kunde hitta några kurser för Webbutvecklingsprogrammet..</p>
+        }
         <table>
             <thead>
                 <th (click)="sortName()">Kursnamn</th>

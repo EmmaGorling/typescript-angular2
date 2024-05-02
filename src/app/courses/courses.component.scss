@@ -15,6 +15,13 @@ main {
         text-align: center;
     }
 
+    p {
+        margin: 15px auto;
+        text-align: center;
+        color: red;
+        font-weight: 500;
+    }
+
     #input {
         width: fit-content;
         margin: 2em auto 2em;
@@ -39,6 +46,10 @@ main {
 
         th {
             border-bottom: 2px solid black;
+        }
+        th:hover {
+            cursor: pointer;
+            background-color: rgb(148, 123, 163);
         }
 
         td {
