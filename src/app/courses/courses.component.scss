@@ -1,0 +1,22 @@
+@import '../../variables';
+
+main {
+    width: 100%;
+    
+    h2 {
+        text-align: center;
+    }
+
+    #input {
+        width: fit-content;
+        margin: 10px auto;
+
+        label {
+            margin-right: 5px;
+        }
+    }
+
+    table {
+        width: 90%;
+    }
+}

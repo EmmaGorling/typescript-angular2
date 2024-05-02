@@ -1,17 +1,19 @@
 <main>
     <h2>Webbutveckling | Ramschema</h2>
 
-    <label for="search">Sök</label>
-    <input type="text" id="search" name="search" [(ngModel)]="searchInput" (ngModelChange)="searchTable()">
+    <div id="input">
+        <label for="search">Sök</label>
+        <input type="text" id="search" name="search" [(ngModel)]="searchInput" (ngModelChange)="searchTable()">
+    </div>
     <table>
         <thead>
             <th (click)="sortName()">Kursnamn</th>
             <th (click)="sortCode()">Kurskod</th>
-            <th (click)="sortProg()">Progression</th>
+            <th (click)="sortProg()">Prog&shy;ression</th>
         </thead>
         <tbody>
             <tr *ngFor="let course of courseList">
-                <td>{{ course.coursename }}</td>
+                <td class="tableName">{{ course.coursename }}</td>
                 <td>{{ course.code }}</td>
                 <td>{{ course.progression }}</td>
             </tr>
